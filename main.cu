@@ -32,7 +32,7 @@ void cpu_histogram_equalization_grayscale(const string &path, const string &file
     int width, height, channels;
     int desired_channels = 1;
     unsigned int *hist_counts = new unsigned int[256];
-    uint8_t LUT = new uint8_t[256];
+    uint8_t *LUT = new uint8_t[256];
     unsigned int *hist_counts_d;
     uint8_t *LUT_d;
     memset(hist_counts, 0, sizeof hist_counts);
